@@ -9,6 +9,7 @@ const port = process.env.PORT || 5001;
 //body parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.disable("etag");
 
 app.use(morgan("dev"));
 
